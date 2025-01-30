@@ -1,0 +1,200 @@
+/* Normalize CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--cream);
+  font-family: "DM Sans", serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+:root {
+  --red: #ec775f;
+  --cyan: #76b5bc;
+  --dark-brown: #382314;
+  --medium-brown: #93867b;
+  --cream: #f8e9dd;
+  --pale-orange: #fffaf5;
+  --white: #fffbf6;
+}
+
+.container {
+  overflow-x: hidden;
+  width: 95%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.balance-header {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.balance-amount {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.chart-container {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--white);
+  margin-bottom: 60px;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--dark-brown);
+}
+
+.separation {
+  margin-block: 30px;
+  background-color: var(--cream);
+  height: 1px;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--medium-brown);
+}
+
+.footer-amount {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  color: var(--dark-brown);
+}
+
+.footer-right {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.footer-percentage {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  color: var(--dark-brown);
+}
+
+.footer-last-month {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  color: var(--medium-brown);
+}
+
+@media screen and (min-width: 461px) {
+  .container {
+    width: 30%;
+  }
+
+  .header {
+    padding: 30px;
+  }
+
+  .balance-header {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .balance-amount {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .logo {
+    width: 72px;
+    height: 48px;
+  }
+
+  .chart-container {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .footer-amount {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .footer-percentage {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .footer-last-month {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
